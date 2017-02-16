@@ -1,0 +1,17 @@
+{
+  "name": "hack-check-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "engines": {
+    "node": ">=5.x"
+  },
+  "dependencies": {
+    "hapi": "13.x.x",
+    "inert": "^3.2.0",
+    "multiparty": "^4.1.3",
+    "satelize": "^0.2.0"
+  },
+  "author": "Rajkumar Surnar",
+  "license": "ISC"
+}
