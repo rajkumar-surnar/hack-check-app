@@ -6,7 +6,7 @@ module.exports = {
     name: 'Hack Check'
   },
   host:   'localhost',
-  port:   3000,
+  port:   5000,
   uploadDir: './private/uploadedFiles',
   version: '1.0.0'
 }

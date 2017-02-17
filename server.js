@@ -5,9 +5,10 @@ const Hapi 	= require('hapi'),
 	Inert 	= require('inert');
 
 const config  = require('./private/Configs/config');
+const port = process.env.PORT || 5000;
 
 const server = new Hapi.Server({ connections: { routes: { files: { relativeTo: Path.join(__dirname, 'public') } } } });
-server.connection({port: config.port },{ cors: true });
+server.connection({port: port },{ cors: true });
 
 const routes = require('./private/Routes/routes');
 server.register(Inert, () => {});
